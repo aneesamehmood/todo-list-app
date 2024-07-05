@@ -1,0 +1,83 @@
+/* Default styles */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0
+}
+
+/* Styling the container */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Styling the heading */
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styling the form */
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Styling ihe input field */
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Styling the submit button */
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #e1a1d8;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Styling the task list */
+ul {
+    list-style: none;
+}
+
+/* Styling the list items */
+li {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling the delete button */
+li button {
+    background: #dc3545;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
