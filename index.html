@@ -11,6 +11,19 @@
             <h1>To-Do List</h1>
             <form id="task-form">
                 <input type="text" id="task-input" placeholder="Add a new task">
+                <label for="task-category">Category:</label>
+                <select id="task-category">
+                    <option value="School">School</option>
+                    <option value="Work">Work</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Other">Other</option>
+                </select>
+                <label for="task-priority">Priority:</label>
+                <select id="task-priority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
                 <button type="submit">Add Task</button>
             </form>
             <ul id="task-list"></ul>

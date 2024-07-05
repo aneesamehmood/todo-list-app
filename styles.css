@@ -7,7 +7,7 @@ body, h1, ul {
 
 /* Styling the body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,9 +19,11 @@ body {
 .container {
     background: white;
     padding: 20px;
+    padding-top: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 400px;
+    max-width: 100%;
 }
 
 /* Styling the heading */
@@ -33,43 +35,57 @@ h1 {
 /* Styling the form */
 form {
     display: flex;
-    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 /* Styling ihe input field */
 input[type="text"] {
-    flex: 1;
-    padding: 10px;
+    width: 100%;
+    padding: 5px;
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+select {
+    border: 1px solid #ddd;
+    padding: 5px;
 }
 
 /* Styling the submit button */
 button {
-    padding: 10px 20px;
-    border: none;
-    background: #e1a1d8;
+    background: #76badc;
     color: white;
-    border-radius: 4px;
+    border: none;
     cursor: pointer;
-    margin-left: 10px;
+    padding: 10px;
+    font-size: 0.9rem;
 }
 
 /* Styling the task list */
 ul {
     list-style: none;
+    margin-top: 20px;
+    padding: 0;
 }
 
 /* Styling the list items */
 li {
-    padding: 10px;
+    padding: 5px 10px;
     background: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 4px;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 /* Styling the delete button */
@@ -80,4 +96,26 @@ li button {
     border-radius: 4px;
     padding: 5px 10px;
     cursor: pointer;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+.category-span, .priority-span {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #555;
+    margin: 2px;
+}
+
+li.high {
+    background-color: #ffcccc;
+}
+
+li.medium {
+    background-color: #ffffcc;
+}
+
+li.low {
+    background-color: #ccffcc;
 }
