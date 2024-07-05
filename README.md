@@ -1,6 +1,6 @@
 # To-Do List App
 
-This is a simple To-Do List application that allows users to add, delete, and save tasks. It's built with basic web technologies and uses the browser's localStorage to ensure that your tasks remain available even after refreshing the page or closing and reopening the browser.
+This is a simple To-Do List application that allows users to add, delete, and save tasks. It's built with basic web technologies and uses the browser's localStorage to ensure that your tasks remain available even after refreshing the page or reopening the browser.
 
 ## Features
 
